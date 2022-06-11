@@ -10,19 +10,22 @@
   max-width: 1024px;
   height: inherit;
   margin-inline: auto;
-  padding: 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.brand {
-  a {
-    color: colors.$color-neutral-900;
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 1.2rem;
-  }
+.name {
+  color: colors.$color-neutral-900;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .links {
@@ -32,7 +35,8 @@
   a {
     color: colors.$color-neutral-900;
     font-family: sans-serif;
-    border: 1px solid transparent;
+    padding-block: 3px;
+    border: 2px solid transparent;
 
     &:hover {
       border-bottom-color: colors.$color-primary;
