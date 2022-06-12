@@ -10,7 +10,6 @@
 .nav {
   @include containers.container;
   height: inherit;
-  margin-inline: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;

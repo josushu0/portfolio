@@ -1,11 +1,11 @@
 import Navbar from './Navbar'
-
+import styles from '../styles/Layout.module.scss'
 
 function Layout({ children }) {
   return (
     <>
       <Navbar/>
-      <main>
+      <main className={styles.main}>
         { children }
       </main>
     </>

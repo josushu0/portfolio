@@ -4,11 +4,13 @@
   @media (min-width: screens.$xl2) {
     max-width: screens.$xl;
     padding: 2rem;
+    margin-inline: auto;
   }
   
   @media (max-width: screens.$xl2) {
     max-width: screens.$xl;
     padding: 2rem;
+    margin-inline: auto;
   }
   
   @media (max-width: screens.$lg) {
@@ -23,6 +25,6 @@
 
   @media (max-width: screens.$sm) {
     max-width: 100vw;
-    padding-inline: 0.5rem;
+    padding-inline: 1rem;
   }
 }

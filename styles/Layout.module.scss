@@ -1,0 +1,5 @@
+@use 'containers';
+
+.main {
+  @include containers.container;
+}
