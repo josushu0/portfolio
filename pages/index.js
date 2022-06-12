@@ -20,7 +20,7 @@ export default function Home() {
               <p>I&apos;m a Front-End Developer</p>
               <div className={styles.actions}>
                 <Link href='/contact'>Get in touch</Link>
-                <Link href='/contact'>Download resume</Link>
+                <Link href='/projects'>See my work</Link>
               </div>
             </div>
             <div className={styles.avatar}>
@@ -28,6 +28,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className={styles.background}></div>
       </div>
     </>
   )
