@@ -24,7 +24,10 @@
   z-index: 10;
 
   @media (max-width: screens.$lg) {
-    justify-content: center;
+    align-content: center;
+    justify-content: start;
+    gap: 2rem;
+    flex-direction: column;
   }
 }
 
@@ -78,10 +81,22 @@
 }
 
 .avatar {
+  height: 470px;
+  width: 470px;
+  padding: 2rem;
   background-color: colors.$secondary;
   border-radius: 50%;
-  @media (max-width: screens.$lg) {
-    display: none;
+  @media (max-width: screens.$xl) {
+    height: 400px;
+    width: 400px;
+  }
+  @media (max-width: screens.$sm) {
+    height: 300px;
+    width: 300px;
+  }
+  @media (max-width: screens.$xs) {
+    height: 250px;
+    width: 250px;
   }
 }
 

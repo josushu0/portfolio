@@ -24,7 +24,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.avatar}>
-              <Image src={avatar} height='500' width='500' alt='Avatar' />
+              <Image src={avatar} alt='Avatar' />
             </div>
           </div>
         </div>
