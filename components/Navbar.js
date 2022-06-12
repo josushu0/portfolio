@@ -15,7 +15,7 @@ function Navbar() {
         </div>
         <div className={styles.links}>
           <Link href='/'>Home</Link>
-          <Link href='/about'>Contact</Link>
+          <Link href='/about'>About</Link>
           <Link href='/projects'>Projects</Link>
           <Link href='/contact'>Contact</Link>
         </div>
