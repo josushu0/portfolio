@@ -11,7 +11,7 @@ function Navbar() {
           <Link href='/'>
             <a className={styles.logo}>
               <Image src={ logo } width='40' height='40' alt='Logo' />
-              <p className={styles.name}>Josué Martell</p>
+              <p>JOSUE MARTELL</p>
             </a>
           </Link>
         </div>
