@@ -1,5 +1,3 @@
-@use 'containers';
-
 .main {
-  @include containers.container;
+  min-height: calc(100vh - 4rem);
 }

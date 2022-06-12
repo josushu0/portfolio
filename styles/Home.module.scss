@@ -1,0 +1,83 @@
+@use 'colors';
+@use 'containers';
+@use 'screens';
+
+.page {
+  height: calc(100vh - 4rem);
+  width: 100%;
+  position: relative;
+}
+
+.main {
+  display: grid;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  @include containers.container;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: auto;
+  z-index: 10;
+
+  @media (max-width: screens.$lg) {
+    justify-content: center;
+  }
+}
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+
+  p:nth-child(1) {
+    font-size: 2rem;
+  }
+
+  p:nth-child(2) {
+    font-size: 3rem;
+  }
+
+  p:nth-child(3) {
+    font-size: 2rem;
+  }
+}
+
+.actions {
+  padding-top: 4rem;
+  display: flex;
+  gap: 1rem;
+  
+  a:nth-child(1) {
+    background-color: colors.$primary;
+  }
+
+  a {
+    padding: 0.5rem 1rem;
+    width: 50%;
+    border: 2px solid colors.$primary;
+    background-color: transparent;
+    color: colors.$neutral-900;
+    text-align: center;
+
+    &:hover {
+      background-color: colors.$primary;
+    }
+
+    @media (max-width: screens.$sm) {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: screens.$sm) {
+    flex-direction: column;
+  }
+}
+
+.avatar {
+  @media (max-width: screens.$lg) {
+    display: none;
+  }
+}

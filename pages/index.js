@@ -1,4 +1,8 @@
-import Head from 'next/head';
+import Head from 'next/head'
+import Image from 'next/image'
+import Link from 'next/link'
+import avatar from '../public/Avatar face.svg'
+import styles from '../styles/Home.module.scss'
 
 export default function Home() {
   return (
@@ -7,7 +11,24 @@ export default function Home() {
         <title>Portfolio | Josué Martell</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
-      <h1>Hello World!</h1>
+      <div className={styles.page}>
+        <div className={styles.main}>
+          <div className={styles.hero}>
+            <div className={styles.greeting}>
+              <p>Hi there,</p>
+              <p>My name is Josué Martell</p>
+              <p>I&apos;m a Front-End Developer</p>
+              <div className={styles.actions}>
+                <Link href='/contact'>Get in touch</Link>
+                <Link href='/contact'>Download resume</Link>
+              </div>
+            </div>
+            <div className={styles.avatar}>
+              <Image src={avatar} height='500' width='500' alt='Avatar' />
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
