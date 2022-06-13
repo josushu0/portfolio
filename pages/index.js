@@ -19,8 +19,8 @@ export default function Home() {
               <p>My name is Josué Martell</p>
               <p>I&apos;m a Front-End Developer</p>
               <div className={styles.actions}>
-                <Link href='/contact'>Get in touch</Link>
-                <Link href='/projects'>See my work</Link>
+                <Link href='/contact'>See my work</Link>
+                <Link href='/about'>More about me</Link>
               </div>
             </div>
             <div className={styles.avatar}>
