@@ -10,7 +10,7 @@
 .main {
   display: grid;
   align-items: center;
-  height: 100%;
+  height: calc(100vh - 4rem);
   width: 100%;
   @include containers.container;
 }

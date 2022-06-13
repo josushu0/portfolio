@@ -8,10 +8,8 @@ function Contact() {
         <title>Projects | Josué Martell</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
-      <div className={styles.page}>
-        <div className={styles.main}>
-          <h1>Coming soon!</h1>
-        </div>
+      <div className={styles.main}>
+        <h1>Coming soon!</h1>
       </div>
     </>
   )

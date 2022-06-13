@@ -1,17 +1,12 @@
 @use 'containers';
 @use 'screens';
 
-.page {
-  height: calc(100vh - 4rem);
-  width: 100%;
-}
-
 .main {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 4rem;
-  height: 100%;
+  height: calc(100vh - 4rem);
   width: 100%;
   @include containers.container;
 
