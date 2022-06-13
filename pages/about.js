@@ -157,7 +157,6 @@ function About() {
             </div>
           </div>
         </div>
-        <div className={styles.background}></div>
       </div>
     </>
   )
