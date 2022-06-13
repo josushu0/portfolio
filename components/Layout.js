@@ -4,10 +4,8 @@ import styles from '../styles/Layout.module.scss'
 function Layout({ children }) {
   return (
     <>
-      <Navbar/>
-      <main className={styles.main}>
-        { children }
-      </main>
+      <Navbar />
+      <main className={styles.main}>{children}</main>
     </>
   )
 }
