@@ -3,4 +3,13 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  nextConfig,
+  images: {
+    domains: [
+      'raw.githubusercontent.com',
+      'www.vectorlogo.zone',
+      'cdn.worldvectorlogo.com',
+    ],
+  },
+}

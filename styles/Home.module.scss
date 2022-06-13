@@ -26,7 +26,7 @@
   @media (max-width: screens.$lg) {
     align-content: center;
     justify-content: start;
-    gap: 4rem;
+    gap: 2rem;
     flex-direction: column;
   }
 }
@@ -81,15 +81,11 @@
 }
 
 .avatar {
-  height: 470px;
-  width: 470px;
+  height: 400px;
+  width: 400px;
   padding: 2rem;
   background-color: colors.$secondary;
   border-radius: 50%;
-  @media (max-width: screens.$xl) {
-    height: 400px;
-    width: 400px;
-  }
   @media (max-width: screens.$sm) {
     height: 300px;
     width: 300px;
