@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import logo from '../public/logo.png'
 import styles from '../styles/Navbar.module.scss'
 
 function Navbar() {
@@ -8,9 +7,7 @@ function Navbar() {
       <nav className={styles.nav}>
         <div>
           <Link href='/'>
-            <a className={styles.logo}>
-              <p>JOSUE MARTELL</p>
-            </a>
+            <a className={styles.logo}>JOSUE MARTELL</a>
           </Link>
         </div>
         <div className={styles.links}>
