@@ -1,4 +1,15 @@
-@import 'https://fonts.googleapis.com/css2?family=Chango&family=Rubik:wght@500&family=Sarala&display=swap';
+@font-face {
+  font-family: Chango;
+  src: url('../public/fonts/Chango/Chango-Regular.ttf');
+} 
+@font-face {
+  font-family: Rubik;
+  src: url('../public/fonts/Rubik/Rubik-Medium.ttf');
+} 
+@font-face {
+  font-family: Sarala;
+  src: url('../public/fonts/Sarala/Sarala-Regular.ttf');
+}
 
 $title: Chango, serif;
 $subtitle: Rubik, system-ui;
