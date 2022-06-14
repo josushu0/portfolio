@@ -14,9 +14,11 @@ export default function Home() {
       <div className={styles.main}>
         <div className={styles.hero}>
           <div className={styles.greeting}>
-            <p>Hi there,</p>
-            <p>My name is Josué Martell</p>
-            <p>I&apos;m a Front-End Developer</p>
+            <h1>Hi there,</h1>
+            <h2>
+              My name is <span>Josué Martell</span>
+            </h2>
+            <h3>I&apos;m a Front-End Developer</h3>
             <div className={styles.actions}>
               <Link href='/contact'>See my work</Link>
               <Link href='/about'>More about me</Link>

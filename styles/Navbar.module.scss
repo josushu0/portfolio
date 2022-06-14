@@ -1,5 +1,6 @@
 @use 'colors';
 @use 'containers';
+@use 'fonts';
 
 .header {
   width: 100vw;
@@ -22,7 +23,7 @@
 
   p {
     color: colors.$neutral-900;
-    font-weight: 600;
+    font-family: fonts.$subtitle;
     font-size: 1.2rem;
     line-height: 1.2rem;
     padding-right: 2rem;

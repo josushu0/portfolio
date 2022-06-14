@@ -1,6 +1,7 @@
 @use 'colors';
 @use 'containers';
 @use 'screens';
+@use 'fonts';
 
 .page {
   height: calc(100vh - 4rem);
@@ -34,16 +35,23 @@
   display: flex;
   flex-direction: column;
 
-  p:nth-child(1) {
+  h1 {
     font-size: 2rem;
+    font-family: fonts.$subtitle;
   }
 
-  p:nth-child(2) {
-    font-size: 3rem;
+  h2 {
+    font-size: 2.5rem;
+    font-family: fonts.$title;
+    
+    span {
+      color: colors.$secondary;
+    }
   }
 
-  p:nth-child(3) {
+  h3 {
     font-size: 2rem;
+    font-family: fonts.$subtitle;
   }
 }
 
