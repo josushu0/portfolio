@@ -21,16 +21,17 @@ function About() {
           <h1>About Me</h1>
           <p>
             Hi! my name is Josué Martell, and I&apos;m a computer systems
-            engeneering student Tecnológico Nacional de Mexico Campus Querétaro.
-            I&apos;m passionate about programming and making digital experiences
-            easier and simpler for everyone. I&apos;m always searching to learn
-            something new and expand my knowledge.
+            engeneering student at Tecnológico Nacional de Mexico Campus
+            Querétaro. I&apos;m passionate about programming and making digital
+            experiences easier and simpler for everyone. I&apos;m always
+            searching to learn something new and expand my knowledge.
           </p>
           <p>
             In my free time, I like to play videogames (I&apos;m a big Nintendo
-            Fan), watch anime, listen to music (and playing my favoite songs on
-            the guitar or ukulele), spend time with friends and family, mountain
-            biking and try out new technologies to build fun side projects.
+            Fan), watch anime, listen to music (and playing my favourite songs
+            on the guitar or ukulele), spend time with friends and family,
+            mountain biking and try out new technologies to build fun side
+            projects.
           </p>
           <div>
             <h2>My Skills</h2>
