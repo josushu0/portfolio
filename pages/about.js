@@ -15,7 +15,7 @@ function About() {
       </Head>
       <div className={styles.main}>
         <div className={styles.photo}>
-          <Image src={photo} alt='Me' width={538} height={718} />
+          <Image src={photo} alt='Me' width={538} height={718} priority />
         </div>
         <div className={styles.section}>
           <h1>About Me</h1>

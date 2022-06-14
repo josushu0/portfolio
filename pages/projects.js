@@ -13,9 +13,18 @@ function Projects() {
       github: 'https://github.com/josushu0/ganttician',
       live: 'https://ganttician.vercel.app/',
       tech: [
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg',
-        'https://www.vectorlogo.zone/logos/supabase/supabase-icon.svg',
-        'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg',
+        {
+          name: 'Vue',
+          src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg',
+        },
+        {
+          name: 'Supabase',
+          src: 'https://www.vectorlogo.zone/logos/supabase/supabase-icon.svg',
+        },
+        {
+          name: 'TailwindCSS',
+          src: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg',
+        },
       ],
     },
     {
@@ -25,9 +34,18 @@ function Projects() {
       github: 'https://github.com/josushu0/portfolio',
       live: 'https://josuemartell.vercel.app/',
       tech: [
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
-        'https://cdn.worldvectorlogo.com/logos/nextjs-2.svg',
-        'https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg',
+        {
+          name: 'React',
+          src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
+        },
+        {
+          name: 'Nextjs',
+          src: 'https://cdn.worldvectorlogo.com/logos/nextjs-2.svg',
+        },
+        {
+          name: 'Sass',
+          src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg',
+        },
       ],
     },
   ]
@@ -43,7 +61,7 @@ function Projects() {
         <section className={styles.section}>
           {projects.map((project) => (
             <ProjectCard
-              key={projects.name}
+              key={project.name}
               name={project.name}
               photo={project.photo}
               github={project.github}

@@ -48,7 +48,13 @@ function ProjectCard(props) {
       <p>{props.description}</p>
       <div className={styles.tech}>
         {props.tech.map((tech) => (
-          <Image key={tech} src={tech} width={30} height={30} alt='Tech icon' />
+          <Image
+            key={tech.name}
+            src={tech.src}
+            width={30}
+            height={30}
+            alt={tech.name}
+          />
         ))}
       </div>
     </div>
