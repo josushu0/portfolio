@@ -10,6 +10,10 @@ export default function Home() {
       <Head>
         <title>Portfolio | Josué Martell</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta
+          name='description'
+          content='Josue Martell Front-end developer portfolio'
+        />
       </Head>
       <div className={styles.main}>
         <div className={styles.hero}>
@@ -25,7 +29,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.avatar}>
-            <Image src={avatar} alt='Avatar' />
+            <Image src={avatar} alt='Avatar' width={400} height={400} />
           </div>
         </div>
       </div>

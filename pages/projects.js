@@ -7,6 +7,7 @@ function Projects() {
       <Head>
         <title>Projects | Josué Martell</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta name='description' content='My projects' />
       </Head>
       <div className={styles.main}>
         <h1>Coming soon!</h1>
