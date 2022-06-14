@@ -14,9 +14,14 @@ function About() {
         <meta name='description' content='About Me' />
       </Head>
       <div className={styles.main}>
-        <div className={styles.photo}>
-          <Image src={photo} alt='Me' width={538} height={718} priority />
-        </div>
+        <Image
+          className={styles.photo}
+          src={photo}
+          alt='Me'
+          width={538}
+          height={718}
+          priority
+        />
         <div className={styles.section}>
           <h1>About Me</h1>
           <p>

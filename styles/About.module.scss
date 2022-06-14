@@ -19,10 +19,10 @@
 }
 
 .photo {
-  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.2)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.2));
-  span > img {
-    border-radius: 2rem;
-  }
+  width: 538px;
+  height: 718px;
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.1)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.1));
+  border-radius: 1rem;
 
   @media (max-width: screens.$md) {
     display: none !important;

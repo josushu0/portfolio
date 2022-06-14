@@ -29,13 +29,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.avatar}>
-            <Image
-              src={avatar}
-              alt='Avatar'
-              width='400'
-              height='400'
-              priority
-            />
+            <Image src={avatar} alt='Avatar' priority />
           </div>
         </div>
       </div>
