@@ -20,7 +20,7 @@ function About() {
           alt='Me'
           width={538}
           height={718}
-          priority
+          priority={true}
         />
         <div className={styles.section}>
           <h1>About Me</h1>

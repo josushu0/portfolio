@@ -29,7 +29,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.avatar}>
-            <Image src={avatar} alt='Avatar' priority />
+            <Image src={avatar} alt='Avatar' priority={true} />
           </div>
         </div>
       </div>
