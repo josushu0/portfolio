@@ -15,7 +15,7 @@ function About() {
       </Head>
       <div className={styles.main}>
         <div className={styles.photo}>
-          <Image src={photo} alt='Me' width={538} height={718} />
+          <Image src={photo} alt='Me' width={538} height={718} priority />
         </div>
         <div className={styles.section}>
           <h1>About Me</h1>
@@ -98,6 +98,15 @@ function About() {
                   height={icon_size}
                 />
                 Sass
+              </li>
+              <li>
+                <Image
+                  src='https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg'
+                  alt='Tailwind'
+                  width={icon_size}
+                  height={icon_size}
+                />
+                Tailwind
               </li>
               <li>
                 <Image
