@@ -101,6 +101,15 @@ function About() {
               </li>
               <li>
                 <Image
+                  src='https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg'
+                  alt='Tailwind'
+                  width={icon_size}
+                  height={icon_size}
+                />
+                Tailwind
+              </li>
+              <li>
+                <Image
                   src='https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg'
                   alt='Bootstrap'
                   width={icon_size}
