@@ -1,6 +1,7 @@
 @use 'containers';
-@use 'screens';
 @use 'colors';
+@use 'fonts';
+@use 'screens';
 
 .main {
   display: flex;
@@ -10,22 +11,46 @@
   min-height: calc(100vh - 4rem);
   width: 100%;
   @include containers.container;
+
+  h1 {
+    font-family: fonts.$subtitle;
+  }
 }
 
 .contact {
-  width: 100%;
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
+  gap: 4rem;
+  background-color: colors.$neutral-100;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.05)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.05));
+
+  @media (max-width: screens.$md) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media (max-width: screens.$md) {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  padding: 1rem 2rem;
   background-color: colors.$neutral-100;
 
   label {
     font-size: 1.3rem;
+    font-family: fonts.$subtitle;
   }
 
   input {
@@ -39,7 +64,7 @@
     border: none;
     border-radius: 5px;
     padding: 0.2rem 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   button {
