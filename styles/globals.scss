@@ -6,6 +6,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  color: colors.$neutral-900;
 }
 
 /* Remove default margin */
