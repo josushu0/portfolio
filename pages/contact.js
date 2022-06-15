@@ -10,6 +10,11 @@ function Contact() {
       formData[field.name] = field.value
     })
     console.log(formData)
+
+    fetch('/api/mail', {
+      method: 'POST',
+      body: JSON.stringify(formData),
+    })
   }
 
   return (

@@ -17,7 +17,7 @@ let mail = (req, res) => {
     html: message.replace(/\r\n/g, '<br/>'),
   }
 
-  mail.send(data)
+  sendgrid.send(data)
   res.status(200).json({ status: 'OK' })
 }
 
