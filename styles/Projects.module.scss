@@ -1,6 +1,7 @@
 @use 'containers';
 @use 'screens';
 @use 'fonts';
+@use 'colors';
 
 .main {
   display: flex;
@@ -13,7 +14,6 @@
   @include containers.container;
 
   h1 {
-    margin-top: 1rem;
     font-family: fonts.$subtitle;
   }
 }
@@ -25,5 +25,17 @@
 
   @media (max-width: screens.$md) {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.button {
+  margin-top: 1rem;
+  a {
+    padding: 0.5rem 1rem;
+    width: 50%;
+    background-color: colors.$primary;
+    color: colors.$neutral-900;
+    text-align: center;
+    border-radius: 0.5rem;
   }
 }

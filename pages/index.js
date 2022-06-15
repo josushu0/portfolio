@@ -24,7 +24,7 @@ export default function Home() {
             </h2>
             <h3>I&apos;m a Front-End Developer</h3>
             <div className={styles.actions}>
-              <Link href='/contact'>See my work</Link>
+              <Link href='/projects'>See my work</Link>
               <Link href='/about'>More about me</Link>
             </div>
           </div>

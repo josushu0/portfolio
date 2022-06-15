@@ -92,7 +92,7 @@ function Contact() {
               rows='5'
               placeholder='Your message...'
             ></textarea>
-            <button>Enviar</button>
+            <button>Send</button>
           </form>
         </div>
       </div>

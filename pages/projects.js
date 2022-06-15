@@ -3,6 +3,7 @@ import ProjectCard from '../components/ProjectCard'
 import styles from '../styles/Projects.module.scss'
 import ganttician from '../public/ganttician.screenshot.png'
 import portfolio from '../public/portfolio-screenshot.png'
+import Link from 'next/link'
 
 function Projects() {
   const projects = [
@@ -71,6 +72,9 @@ function Projects() {
             />
           ))}
         </section>
+        <div className={styles.button}>
+          <Link href='/contact'>Get in touch</Link>
+        </div>
       </div>
     </>
   )
