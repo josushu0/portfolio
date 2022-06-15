@@ -1,12 +1,52 @@
 @use 'containers';
 @use 'screens';
+@use 'colors';
 
 .main {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 4rem;
-  height: calc(100vh - 4rem);
+  gap: 2rem;
+  min-height: calc(100vh - 4rem);
   width: 100%;
   @include containers.container;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  background-color: colors.$neutral-100;
+
+  label {
+    font-size: 1.3rem;
+  }
+
+  input {
+    margin-bottom: 1rem;
+    padding: 0.2rem 0.5rem;
+    border: none;
+    border-radius: 5px;
+  }
+
+  textarea {
+    border: none;
+    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: colors.$primary;
+  }
 }
