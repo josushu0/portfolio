@@ -1,9 +1,16 @@
+@use 'screens';
+
 .div {
   position: relative;
 }
 
 .main {
   min-height: calc(100vh - 4rem);
+  padding-block: 2rem;
+
+  @media (max-width: screens.$sm) {
+    padding-bottom: 1rem;
+  }
 }
 
 .background {
