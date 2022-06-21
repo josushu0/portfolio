@@ -34,8 +34,11 @@
     padding: 0.5rem 1rem;
     width: 50%;
     background-color: colors.$primary;
-    color: colors.$neutral-900;
     text-align: center;
     border-radius: 0.5rem;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: colors.$primary-300;
+    }
   }
 }
