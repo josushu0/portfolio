@@ -7,6 +7,10 @@
 *::after {
   box-sizing: border-box;
   color: colors.$neutral-900;
+
+  @media (prefers-color-scheme: dark) {
+    color: colors.$neutral-100;
+  }
 }
 
 /* Remove default margin */
@@ -41,8 +45,11 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: colors.$neutral-200;
-  color: colors.$neutral-900;
   font-family: fonts.$body;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: colors.$neutral-400;
+  }
 }
 
 /* A elements that don't have a class get default styles */

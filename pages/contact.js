@@ -64,6 +64,7 @@ function Contact() {
                   alt='Github'
                   width={40}
                   height={40}
+                  className={styles.github}
                 />
                 <p>Github</p>
               </a>

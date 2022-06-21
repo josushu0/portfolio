@@ -6,6 +6,10 @@
   width: 100vw;
   height: 4rem;
   background-color: colors.$neutral-100;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: colors.$neutral-900;
+  }
 }
 
 .nav {
@@ -20,7 +24,6 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: colors.$neutral-900;
   font-family: fonts.$subtitle;
   font-size: 1.2rem;
   line-height: 1.2rem;
@@ -36,12 +39,15 @@
   }
 
   a {
-    color: colors.$neutral-900;
     padding-block: 3px;
     border: 2px solid transparent;
 
     &:hover {
       border-bottom-color: colors.$primary;
+
+      @media (prefers-color-scheme: dark) {
+        border-bottom-color: colors.$primary-300;
+      }
     }
   }
 }
