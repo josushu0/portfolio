@@ -34,3 +34,9 @@
   align-items: center;
   justify-content: center;
 }
+
+.link {
+  @media (prefers-color-scheme: dark) {
+    filter: invert(100%);
+  }
+}
