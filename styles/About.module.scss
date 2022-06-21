@@ -16,6 +16,12 @@
     justify-content: start;
     flex-direction: column;
   }
+
+  & > span {
+    @media (max-width: screens.$md) {
+      display: none !important;
+    }
+  }
 }
 
 .photo {
@@ -23,10 +29,6 @@
   height: 718px;
   filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.1)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.1));
   border-radius: 1rem;
-
-  @media (max-width: screens.$md) {
-    display: none !important;
-  }
 }
 
 .section {
