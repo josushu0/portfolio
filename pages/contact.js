@@ -26,7 +26,7 @@ function Contact() {
         <meta name='description' content='Contact Me' />
       </Head>
       <div className={styles.main}>
-        <h1>Get in contact!</h1>
+        <h1>Get in touch!</h1>
         <div className={styles.contact}>
           <div className={styles.socials}>
             <Link href={'https://twitter.com/josushu0'}>
