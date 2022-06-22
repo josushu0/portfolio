@@ -41,7 +41,7 @@ function Projects() {
         },
         {
           name: 'Nextjs',
-          src: 'https://cdn.worldvectorlogo.com/logos/nextjs-2.svg',
+          src: 'https://cdn.worldvectorlogo.com/logos/next-js.svg',
         },
         {
           name: 'Sass',

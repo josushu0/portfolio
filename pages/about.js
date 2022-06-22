@@ -88,7 +88,7 @@ function About() {
               </li>
               <li>
                 <Image
-                  src='https://cdn.worldvectorlogo.com/logos/nextjs-2.svg'
+                  src='https://cdn.worldvectorlogo.com/logos/next-js.svg'
                   alt='Nextjs'
                   width={icon_size}
                   height={icon_size}
