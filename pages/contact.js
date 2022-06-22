@@ -2,8 +2,11 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Contact.module.scss'
+import { useRouter } from 'next/router'
 
 function Contact() {
+  const router = useRouter()
+
   const handleOnSubmit = async (e) => {
     e.preventDefault()
     const formData = {}
@@ -16,6 +19,8 @@ function Contact() {
       method: 'POST',
       body: JSON.stringify(formData),
     })
+
+    router.replace('/thanks')
   }
 
   return (
