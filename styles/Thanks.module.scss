@@ -1,0 +1,42 @@
+@use 'colors';
+@use 'fonts';
+
+.main {
+  display: grid;
+  place-content: center;
+  height: calc(100vh - 8rem);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: colors.$neutral_100;
+  border-radius: 1rem;
+  padding: 2rem;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: colors.$neutral_900;
+  }
+
+  h1 {
+    font-family: fonts.$subtitle;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  a {
+    background-color: colors.$primary;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: colors.$primary-300;
+    }
+  }
+}
