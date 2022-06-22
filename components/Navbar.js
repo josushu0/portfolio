@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styles from '../styles/Navbar.module.scss'
 
-function Navbar({ toggleDrawer }) {
+function Navbar({ toggleDrawer, isOpen }) {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
@@ -26,6 +26,10 @@ function Navbar({ toggleDrawer }) {
           width={28}
           height={28}
           onClick={toggleDrawer}
+          onKeyDown={toggleDrawer}
+          tabIndex='0'
+          role='button'
+          aria-label='Open Mobile Navigation'
         >
           <path
             strokeLinecap='round'
