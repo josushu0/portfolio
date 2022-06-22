@@ -48,11 +48,12 @@
   }
 }
 
-.drawer {
+.drawer_icon {
   @media (min-width: 640px) {
     display: none;
   }
 
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
