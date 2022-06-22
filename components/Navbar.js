@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styles from '../styles/Navbar.module.scss'
 
-function Navbar({ toggleDrawer, isOpen }) {
+function Navbar({ toggleDrawer }) {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>

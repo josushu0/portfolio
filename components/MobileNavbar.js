@@ -26,6 +26,7 @@ function MobileNavbar({ toggleDrawer, isOpen }) {
             width={32}
             height={32}
             onClick={toggleDrawer}
+            onKeyDown={toggleDrawer}
             role='button'
             aria-label='Open Mobile Navigation'
             tabIndex='0'
