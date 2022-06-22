@@ -17,6 +17,7 @@
   padding: 2rem;
   margin-inline: 1rem;
   filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.05)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.05));
+  text-align: center;
 
   @media (prefers-color-scheme: dark) {
     background-color: colors.$neutral_900;
