@@ -4,7 +4,12 @@ import styles from '../styles/ProjectCard.module.scss'
 function ProjectCard(props) {
   return (
     <div className={styles.card}>
-      <Image src={props.photo} alt={`$props.title image`} />
+      <Image
+        src={props.photo}
+        alt={`$props.title image`}
+        width={2280}
+        height={1800}
+      />
       <div className={styles.title}>
         <h2>{props.name}</h2>
         <div>

@@ -1,55 +1,10 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import ProjectCard from '../components/ProjectCard'
 import styles from '../styles/Projects.module.scss'
-import ganttician from '../public/ganttician.screenshot.png'
-import portfolio from '../public/portfolio-screenshot.png'
-import Link from 'next/link'
+import projects from '../public/projects.json'
 
 function Projects() {
-  const projects = [
-    {
-      name: 'Ganttician',
-      description: 'Project manager using Gantt charts.',
-      photo: ganttician,
-      github: 'https://github.com/josushu0/ganttician',
-      live: 'https://ganttician.vercel.app/',
-      tech: [
-        {
-          name: 'Vue',
-          src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg',
-        },
-        {
-          name: 'Supabase',
-          src: 'https://www.vectorlogo.zone/logos/supabase/supabase-icon.svg',
-        },
-        {
-          name: 'TailwindCSS',
-          src: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg',
-        },
-      ],
-    },
-    {
-      name: 'Personal portfolio',
-      description: 'My front-end developer portfolio.',
-      photo: portfolio,
-      github: 'https://github.com/josushu0/portfolio',
-      live: 'https://josuemartell.vercel.app/',
-      tech: [
-        {
-          name: 'React',
-          src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
-        },
-        {
-          name: 'Nextjs',
-          src: 'https://cdn.worldvectorlogo.com/logos/next-js.svg',
-        },
-        {
-          name: 'Sass',
-          src: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg',
-        },
-      ],
-    },
-  ]
   return (
     <>
       <Head>
