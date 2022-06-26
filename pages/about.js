@@ -43,33 +43,6 @@ function About() {
             <ul className={styles.skills}>
               <li>
                 <Image
-                  src='https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg'
-                  alt='HTML5'
-                  width={icon_size}
-                  height={icon_size}
-                />
-                HTML5
-              </li>
-              <li>
-                <Image
-                  src='https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg'
-                  alt='CSS3'
-                  width={icon_size}
-                  height={icon_size}
-                />
-                CSS3
-              </li>
-              <li>
-                <Image
-                  src='https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'
-                  alt='Javascript'
-                  width={icon_size}
-                  height={icon_size}
-                />
-                Javascript
-              </li>
-              <li>
-                <Image
                   src='https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg'
                   alt='Vue'
                   width={icon_size}
@@ -115,57 +88,12 @@ function About() {
               </li>
               <li>
                 <Image
-                  src='https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg'
-                  alt='Bootstrap'
-                  width={icon_size}
-                  height={icon_size}
-                />
-                Bootstrap
-              </li>
-              <li>
-                <Image
-                  src='https://raw.githubusercontent.com/gilbarbara/logos/804dc257b59e144eaca5bc6ffd16949752c6f789/logos/bulma.svg'
-                  alt='Nextjs'
-                  width={icon_size}
-                  height={icon_size}
-                />
-                Bulma
-              </li>
-              <li>
-                <Image
-                  src='https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg'
-                  alt='MySQL'
-                  width={icon_size}
-                  height={icon_size}
-                />
-                MySQL
-              </li>
-              <li>
-                <Image
-                  src='https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg'
-                  alt='Postgresql'
-                  width={icon_size}
-                  height={icon_size}
-                />
-                Postgresql
-              </li>
-              <li>
-                <Image
                   src='https://www.vectorlogo.zone/logos/supabase/supabase-icon.svg'
                   alt='Supabase'
                   width={icon_size}
                   height={icon_size}
                 />
                 Supabase
-              </li>
-              <li>
-                <Image
-                  src='https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg'
-                  alt='Git'
-                  width={icon_size}
-                  height={icon_size}
-                />
-                Git
               </li>
             </ul>
           </div>
