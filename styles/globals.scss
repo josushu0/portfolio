@@ -6,7 +6,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  color: colors.$neutral-900;
+  color: colors.$neutral-400;
 
   @media (prefers-color-scheme: dark) {
     color: colors.$neutral-100;
