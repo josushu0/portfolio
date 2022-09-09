@@ -1,22 +1,15 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
+  "name": "@example/basics",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@sendgrid/mail": "^7.7.0",
-    "next": "12.1.6",
-    "react": "18.1.0",
-    "react-dom": "18.1.0"
-  },
-  "devDependencies": {
-    "eslint": "8.17.0",
-    "eslint-config-next": "12.1.6",
-    "sass": "^1.52.3"
+    "astro": "^1.2.0"
   }
 }
