@@ -1,0 +1,17 @@
+{
+	"url": "http://json.schemastore.org/prettierrc",
+	"printWidth": 80,
+	"tabWidth": 2,
+	"useTabs": true,
+	"semi": true,
+	"singleQuote": true,
+	"trailingComma": "es5",
+	"bracketSpacing": true,
+	"bracketSameLine": true,
+	"arrowParens": "always",
+	"vueIndentScriptAndStyle": false,
+	"singleAttributePerLine": false,
+	"parser": "astro",
+	"pluginSearchDirs": ["./node_modules"],
+	"plugins": ["prettier-plugin-astro"]
+}
