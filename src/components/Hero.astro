@@ -1,0 +1,61 @@
+---
+---
+
+<section>
+	<h2>Hi there, I'm Josué</h2>
+	<h1>I'm a Front-End Web Developer</h1>
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		fill="none"
+		viewBox="0 0 24 24"
+		stroke-width="1.5"
+		stroke="currentColor"
+		class="arrow">
+		<path
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"></path>
+	</svg>
+</section>
+
+<style>
+	section {
+		min-height: calc(100vh - 60px);
+		width: 100vw;
+		display: grid;
+		place-content: center;
+		text-align: center;
+		position: relative;
+		background-image: url('../../public/topography-light.svg');
+	}
+
+	h2 {
+		margin-block-end: 1rem;
+	}
+
+	.arrow {
+		width: 50px;
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
+		animation: bounce 1s infinite;
+	}
+
+	@keyframes bounce {
+		0%,
+		100% {
+			transform: translateY(-25%);
+			animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+		}
+		50% {
+			transform: translateY(0);
+			animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		section {
+			background-image: url('../../public/topography-dark.svg');
+		}
+	}
+</style>
