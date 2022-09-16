@@ -33,6 +33,7 @@
 
 	h2 {
 		text-align: center;
+		margin-bottom: 2rem;
 	}
 
 	img {
@@ -48,6 +49,22 @@
 	@media (prefers-color-scheme: dark) {
 		h2 {
 			color: var(--color-primary);
+		}
+	}
+
+	@media (max-width: 768px) {
+		section {
+			padding-block-end: 0px;
+		}
+
+		.about {
+			flex-direction: column-reverse;
+		}
+	}
+
+	@media (max-width: 1296px) {
+		section {
+			margin-inline: 2rem;
 		}
 	}
 </style>
