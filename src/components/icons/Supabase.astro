@@ -1,0 +1,43 @@
+---
+export interface Props {
+	className: string;
+}
+
+const { className } = Astro.props;
+---
+
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	class={className}
+	aria-label="Supabase"
+	style="fill:none"
+	viewBox="0 0 64 64"
+	><path
+		d="M37.4 63c-1.6 2-5 .9-5-1.8l-.6-38.4h25.9c4.7 0 7.3 5.4 4.4 9z"
+		style="fill:url(#a);stroke-width:.57177335"></path><path
+		d="M37.4 63c-1.6 2-5 .9-5-1.8l-.6-38.4h25.9c4.7 0 7.3 5.4 4.4 9z"
+		style="fill:url(#b);fill-opacity:.2;stroke-width:.57177335"></path><path
+		d="M26.9 1c1.6-2 5-.9 5 1.8l.2 38.4H6.6a5.6 5.6 0 0 1-4.4-9z"
+		style="fill:#3ecf8e;stroke-width:.57177335"></path><defs
+		><linearGradient
+			id="a"
+			x1="54"
+			y1="55"
+			x2="94.2"
+			y2="71.8"
+			gradientUnits="userSpaceOnUse"
+			gradientTransform="translate(1 -.1) scale(.57177)"
+			><stop stop-color="#249361"></stop><stop offset="1" stop-color="#3ECF8E"
+			></stop>
+		</linearGradient><linearGradient
+			id="b"
+			x1="36.2"
+			y1="30.6"
+			x2="54.5"
+			y2="65.1"
+			gradientUnits="userSpaceOnUse"
+			gradientTransform="translate(1 -.1) scale(.57177)"
+			><stop></stop><stop offset="1" stop-opacity="0"></stop>
+		</linearGradient>
+	</defs>
+</svg>
