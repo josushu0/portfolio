@@ -1,0 +1,70 @@
+---
+---
+
+<section id="about">
+	<h2>Who am I</h2>
+	<div class="about">
+		<img src="avatar.svg" alt="Caricature of Josué" width="300" height="300" />
+		<div>
+			<p>
+				Hi! my name is Josué Martell, and I'm a computer systems engeneering
+				student at Tecnológico Nacional de Mexico Campus Querétaro. I'm
+				passionate about programming and making digital experiences easier and
+				simpler for everyone. I'm always searching to learn something new and
+				expand my knowledge.
+			</p>
+			<p>
+				In my free time, I like to play videogames (I'm a big Nintendo Fan),
+				watch anime, listen to music (and playing my favourite songs on the
+				guitar or ukulele), spend time with friends and family, mountain biking
+				and try out new technologies to build fun side projects.
+			</p>
+		</div>
+	</div>
+</section>
+
+<style>
+	section {
+		max-width: 1280px;
+		padding-block-start: 100px;
+		padding-block-end: 50px;
+		margin-inline: auto;
+	}
+
+	h2 {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	img {
+		transform: scaleX(-100%);
+	}
+
+	.about {
+		display: flex;
+		align-items: center;
+		gap: 4rem;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		h2 {
+			color: var(--color-primary);
+		}
+	}
+
+	@media (max-width: 768px) {
+		section {
+			padding-block-end: 0px;
+		}
+
+		.about {
+			flex-direction: column-reverse;
+		}
+	}
+
+	@media (max-width: 1296px) {
+		section {
+			margin-inline: 2rem;
+		}
+	}
+</style>

@@ -1,0 +1,99 @@
+---
+---
+
+<section>
+	<div class="titles">
+		<h2>Hi there, I'm Josué</h2>
+		<h1>I'm a <span class="text-gradient">Front-End</span> Web Developer</h1>
+	</div>
+	<div class="container">
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke-width="1.5"
+			stroke="currentColor"
+			class="arrow">
+			<path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"></path>
+		</svg>
+	</div>
+</section>
+
+<style>
+	section {
+		min-height: 100vh;
+		width: 100vw;
+		display: grid;
+		place-content: center;
+		text-align: center;
+		position: relative;
+		background-image: url('topography-light.svg');
+		box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.06),
+			0 8px 10px -6px rgb(0 0 0 / 0.01);
+	}
+
+	h2 {
+		margin-block-end: 1rem;
+	}
+
+	.text-gradient {
+		background-image: var(--brand-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 100% 200%;
+		background-position-y: 100%;
+		border-radius: 0.4rem;
+		animation: pulse 4s ease-in-out infinite;
+	}
+
+	.container {
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		bottom: 5%;
+	}
+
+	.arrow {
+		width: 50px;
+		animation: bounce 1s infinite;
+	}
+
+	@keyframes bounce {
+		0%,
+		100% {
+			transform: translateY(-25%);
+			animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+		}
+		50% {
+			transform: translateY(0);
+			animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+		}
+	}
+
+	@keyframes pulse {
+		0%,
+		100% {
+			background-position-y: 0%;
+		}
+		50% {
+			background-position-y: 80%;
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		section {
+			background-image: url('topography-dark.svg');
+			box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+		}
+	}
+
+	@media (max-width: 1280px) {
+		.titles {
+			padding-inline: 2rem;
+		}
+	}
+</style>
