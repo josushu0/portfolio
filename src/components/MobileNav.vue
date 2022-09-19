@@ -1,6 +1,7 @@
 <template>
 	<Menu as="div" v-slot="{ open }" class="menu">
 		<MenuButton class="menu-button">
+			<span class="sr-only">Open navigation menu</span>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 24 24"
@@ -98,6 +99,18 @@ import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
 	outline-style: solid;
 	outline-color: var(--color-tertiary);
 	outline-offset: -2px;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
 }
 
 @media (prefers-color-scheme: dark) {
