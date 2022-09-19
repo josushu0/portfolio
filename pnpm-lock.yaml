@@ -2,12 +2,14 @@ lockfileVersion: 5.4
 
 specifiers:
   '@astrojs/vue': ^1.0.2
+  '@headlessui/vue': ^1.7.2
   astro: ^1.2.0
   prettier-plugin-astro: ^0.5.4
   vue: ^3.2.30
 
 dependencies:
   '@astrojs/vue': 1.0.2_vue@3.2.39
+  '@headlessui/vue': 1.7.2_vue@3.2.39
   astro: 1.2.0
   vue: 3.2.39
 
@@ -389,6 +391,15 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@headlessui/vue/1.7.2_vue@3.2.39:
+    resolution: {integrity: sha512-nmmFpQxnAy6zgf5r0pwdAH3Qw2IsSbTgvkpov9RkEVE8A6aPAT4iaAaPEAzdI+sPL5Wby05mhciJXSqtkLu+vQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      vue: 3.2.39
+    dev: false
 
   /@jridgewell/gen-mapping/0.1.1:
     resolution: {integrity: sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w==}
