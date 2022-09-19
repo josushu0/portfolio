@@ -22,20 +22,20 @@
 			</svg>
 		</MenuButton>
 		<MenuItems class="panel">
-			<MenuItem v-slot="{ active }"
-				><a
+			<MenuItem v-slot="{ active }">
+				<a
 					href="#about"
-					:class="{ 'menu-item active': active, 'menu-item': !active }"
-					>About Me</a
-				>
+					:class="{ 'menu-item active': active, 'menu-item': !active }">
+					About Me
+				</a>
 			</MenuItem>
-			<MenuItem v-slot="{ active }"
-				><a
+			<MenuItem v-slot="{ active }">
+				<a
 					href="#projects"
-					:class="{ 'menu-item active': active, 'menu-item': !active }"
-					>Projects</a
-				></MenuItem
-			>
+					:class="{ 'menu-item active': active, 'menu-item': !active }">
+					Projects
+				</a>
+			</MenuItem>
 		</MenuItems>
 	</Menu>
 </template>
