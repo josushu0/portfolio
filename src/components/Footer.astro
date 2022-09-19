@@ -1,0 +1,132 @@
+---
+---
+
+<footer>
+	<div class="flex">
+		<p class="love">
+			Made with <span class="heart" aria-label="Love">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					width="24"
+					height="24"
+					class="heart"
+					aria-hidden="true">
+					<path fill="none" d="M0 0H24V24H0z"></path><path
+						d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2z">
+					</path>
+				</svg>
+			</span> by Josué
+		</p>
+		<p class="avatar">
+			Avatar by
+			<a
+				href="https://www.figma.com/@ashleykseo"
+				target="_blank"
+				rel="noopener noreferrer">
+				Ashley Seo
+			</a>
+			<a
+				href="https://creativecommons.org/licenses/by/4.0/"
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="Learn more about Creative Commons 4.0">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					width="24"
+					height="24"
+					class="cc-logo"
+					aria-hidden="true">
+					<path fill="none" d="M0 0h24v24H0z"></path><path
+						d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zM9 8c-2.208 0-4 1.792-4 4a4.001 4.001 0 0 0 6.669 2.979l.159-.151-1.414-1.414a2 2 0 1 1-.125-2.943l.126.116 1.414-1.414A3.988 3.988 0 0 0 9 8zm7 0c-2.208 0-4 1.792-4 4a4.001 4.001 0 0 0 6.669 2.979l.159-.151-1.414-1.414a2 2 0 1 1-.125-2.943l.126.116 1.414-1.414A3.988 3.988 0 0 0 16 8z">
+					</path>
+				</svg>
+			</a>
+		</p>
+	</div>
+</footer>
+
+<style>
+	footer {
+		height: 60px;
+		margin-block-start: 50px;
+		background-color: var(--color-bg-surface);
+		box-shadow: 0 -1px 3px 0 rgb(0 0 0 / 0.1), 0 -1px 2px -1px rgb(0 0 0 / 0.1);
+		font-size: clamp(0.5rem, 1.6vw - 0.2rem, 0.8rem);
+	}
+
+	a {
+		display: block;
+	}
+
+	.flex {
+		height: 100%;
+		max-width: 1280px;
+		margin-inline: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.love {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+	}
+
+	.love svg {
+		fill: var(--color-secondary);
+	}
+
+	.love span {
+		display: inline-flex;
+		align-items: center;
+	}
+
+	.avatar {
+		display: inline-flex;
+		align-items: center;
+	}
+
+	.avatar a {
+		color: var(--color-text);
+		text-decoration: none;
+		display: inline-flex;
+		align-items: center;
+	}
+
+	.cc-logo {
+		fill: var(--color-text);
+		margin-inline-start: 0.4rem;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.avatar a {
+			color: var(--color-text-dark);
+		}
+
+		.cc-logo {
+			fill: var(--color-text-dark);
+		}
+	}
+
+	@media (max-width: 1296px) {
+		.flex {
+			padding-inline: 1rem;
+		}
+
+		.heart,
+		.cc-logo {
+			height: 16px;
+		}
+
+		.love {
+			gap: 0px;
+		}
+
+		.cc-logo {
+			margin-inline-start: 0px;
+		}
+	}
+</style>
