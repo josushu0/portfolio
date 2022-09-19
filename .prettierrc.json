@@ -11,7 +11,14 @@
 	"arrowParens": "always",
 	"vueIndentScriptAndStyle": false,
 	"singleAttributePerLine": false,
-	"parser": "astro",
+	"overrides": [
+		{
+			"files": "*.js",
+			"options": {
+				"parser": "flow"
+			}
+		}
+	],
 	"pluginSearchDirs": ["./node_modules"],
 	"plugins": ["prettier-plugin-astro"]
 }
