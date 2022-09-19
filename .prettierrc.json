@@ -13,9 +13,9 @@
 	"singleAttributePerLine": false,
 	"overrides": [
 		{
-			"files": "*.js",
+			"files": "*.astro",
 			"options": {
-				"parser": "flow"
+				"parser": "astro"
 			}
 		}
 	],
