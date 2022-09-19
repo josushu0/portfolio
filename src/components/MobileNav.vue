@@ -36,6 +36,13 @@
 					Projects
 				</a>
 			</MenuItem>
+			<MenuItem v-slot="{ active }">
+				<a
+					href="#contact"
+					:class="{ 'menu-item active': active, 'menu-item': !active }">
+					Contact
+				</a>
+			</MenuItem>
 		</MenuItems>
 	</Menu>
 </template>
@@ -90,6 +97,7 @@ import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
 	outline-width: 2px;
 	outline-style: solid;
 	outline-color: var(--color-tertiary);
+	outline-offset: -2px;
 }
 
 @media (prefers-color-scheme: dark) {
