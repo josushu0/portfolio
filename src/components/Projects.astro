@@ -1,6 +1,7 @@
 ---
 import Astrojs from './icons/Astrojs.astro'
 import CSS from './icons/CSS.astro'
+import React from './icons/React.astro'
 import Supabase from './icons/Supabase.astro'
 import Tailwind from './icons/Tailwind.astro'
 import Typescript from './icons/Typescript.astro'
@@ -40,6 +41,40 @@ import Vue from './icons/Vue.astro'
 					<a
 						class="button github"
 						href="https://github.com/josushu0/ganttician"
+						target="_blank">
+						Github Repo
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="project">
+			<picture>
+				<source
+					srcset="higher-dark.png"
+					media="(prefers-color-scheme: dark)"
+				/>
+				<img
+					src="higher-light.png"
+					alt="A screenshot of a game of Higher Lower Anime"
+				/>
+			</picture>
+			<div class="info">
+				<h3>Higher Lower Anime</h3>
+				<p>A game of higher or lower based on The Higher Lower Game with anime rankings from MyAnimeList.</p>
+				<div>
+					<React className="tech" />
+					<CSS className="tech" />
+				</div>
+				<div class="actions">
+					<a
+						class="button live"
+						href="https://higherloweranime.vercel.app/"
+						target="_blank">
+						Live preview
+					</a>
+					<a
+						class="button github"
+						href="https://github.com/josushu0/higher-lower-anime"
 						target="_blank">
 						Github Repo
 					</a>
@@ -94,14 +129,20 @@ import Vue from './icons/Vue.astro'
 	.project {
 		display: flex;
 		margin-block-start: 3rem;
+		justify-content: space-between;
+	}
+
+	picture {
+		max-width: 50%;
 	}
 
 	.info {
+		flex-basis: 40%;
 		min-width: 40%;
 	}
 
 	img {
-		width: 90%;
+		width: 100%;
 		border: 4px solid var(--color-text);
 		border-radius: 10px;
 	}
@@ -181,8 +222,8 @@ import Vue from './icons/Vue.astro'
 			flex-direction: column;
 		}
 
-		img {
-			width: 100%;
+		picture {
+			max-width: 100%;
 		}
 	}
 
