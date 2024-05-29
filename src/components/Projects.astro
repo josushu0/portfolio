@@ -11,7 +11,7 @@ import Vue from './icons/Vue.astro'
 <section id="projects">
 	<h2>Projects</h2>
 	<div class="projects">
-		<div class="project">
+		<!-- <div class="project">
 			<picture>
 				<source
 					srcset="ganttician-dark.webp"
@@ -46,15 +46,15 @@ import Vue from './icons/Vue.astro'
 					</a>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div class="project">
 			<picture>
 				<source
-					srcset="hla-dark.webp"
+					srcset="/portfolio/hla-dark.webp"
 					media="(prefers-color-scheme: dark)"
 				/>
 				<img
-					src="hla-light.webp"
+					src="/portfolio/hla-light.webp"
 					alt="A screenshot of a game of Higher Lower Anime"
 				/>
 			</picture>
@@ -84,11 +84,11 @@ import Vue from './icons/Vue.astro'
 		<div class="project">
 			<picture>
 				<source
-					srcset="portfolio-dark.webp"
+					srcset="/portfolio/portfolio-dark.webp"
 					media="(prefers-color-scheme: dark)"
 				/>
 				<img
-					src="portfolio-light.webp"
+					src="/portfolio/portfolio-light.webp"
 					alt="A screenshot of my portfolio site"
 				/>
 			</picture>
@@ -147,7 +147,7 @@ import Vue from './icons/Vue.astro'
 		border-radius: 10px;
 	}
 
-	.tech {
+	:global(.tech) {
 		width: 40px;
 		margin-inline-end: 0.5rem;
 	}

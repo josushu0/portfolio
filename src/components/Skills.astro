@@ -8,6 +8,7 @@ import Supabase from './icons/Supabase.astro'
 import Tailwind from './icons/Tailwind.astro'
 import Typescript from './icons/Typescript.astro'
 import Vue from './icons/Vue.astro'
+import Laravel from './icons/Laravel.astro'
 ---
 
 <section>
@@ -67,6 +68,12 @@ import Vue from './icons/Vue.astro'
 			aria-label="Learn more about Supabase">
 			<Supabase className="skill" />
 		</a>
+		<a
+			href="https://laravel.com/"
+			target="_blank"
+			aria-label="Learn more about Laravel">
+			<Laravel className="skill" />
+		</a>
 	</div>
 </section>
 
@@ -94,7 +101,7 @@ import Vue from './icons/Vue.astro'
 		margin-block-start: 3rem;
 	}
 
-	.skill {
+	:global(.skill) {
 		width: 70px;
 		transition: transform 0.3s;
 	}
