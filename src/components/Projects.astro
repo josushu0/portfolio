@@ -1,6 +1,7 @@
 ---
 import Astrojs from './icons/Astrojs.astro'
 import CSS from './icons/CSS.astro'
+import Laravel from './icons/Laravel.astro'
 import React from './icons/React.astro'
 import Supabase from './icons/Supabase.astro'
 import Tailwind from './icons/Tailwind.astro'
@@ -9,135 +10,107 @@ import Vue from './icons/Vue.astro'
 ---
 
 <section id="projects">
-	<h2>Projects</h2>
+	<h2>Personal Projects</h2>
 	<div class="projects">
-		<!-- <div class="project">
-			<picture>
-				<source
-					srcset="ganttician-dark.webp"
-					media="(prefers-color-scheme: dark)"
-				/>
-				<img
-					src="ganttician-light.webp"
-					alt="A screenshot of Ganttician with an open project"
-				/>
-			</picture>
-			<div class="info">
-				<h3>Ganttician</h3>
-				<p>Ganttician is a project manager web app that uses Gantt charts.</p>
-				<div>
-					<Vue className="tech" />
-					<Typescript className="tech" />
-					<Tailwind className="tech" />
-					<Supabase className="tech" />
-				</div>
-				<div class="actions">
-					<a
-						class="button live"
-						href="https://ganttician.vercel.app/"
-						target="_blank">
-						Live preview
-					</a>
-					<a
-						class="button github"
-						href="https://github.com/josushu0/ganttician"
-						target="_blank">
-						Github Repo
-					</a>
-				</div>
-			</div>
-		</div> -->
 		<div class="project">
 			<picture>
-				<source srcset="/hla-dark.webp" media="(prefers-color-scheme: dark)" />
-				<img src="/hla-light.webp" alt="A screenshot of Higher Lower Anime" />
+				<source srcset="/kann-dark.webp" media="(prefers-color-scheme: dark)" />
+				<img src="/kann-light.webp" alt="Kann" />
 			</picture>
 			<div class="info">
-				<h3>Higher Lower Anime</h3>
+				<h3>Kann</h3>
 				<p>
-					A game of higher or lower I made for me and my friends to play, it is
-					based on The Higher Lower Game with anime rankings from Anilist.
+					A project manager with kanban boards, it supports team and user
+					management, create projects and invite users to teams to manage tasks.
 				</p>
 				<div>
+					<Laravel className="tech" />
 					<Vue className="tech" />
 					<Tailwind className="tech" />
 				</div>
 				<div class="actions">
 					<a
 						class="button live"
-						href="https://hla.josuemartell.dev/"
+						href="https://kann.josuemartell.dev/"
 						target="_blank">
 						Live preview
 					</a>
 					<a
 						class="button github"
-						href="https://github.com/josushu0/higher-lower-anime"
+						href="https://github.com/josushu0/kann"
 						target="_blank">
 						Github Repo
 					</a>
 				</div>
 			</div>
 		</div>
-		<div class="project">
-			<picture>
-				<source
-					srcset="/image-dark.webp"
-					media="(prefers-color-scheme: dark)"
-				/>
-				<img src="/image-light.webp" alt="Image editor" />
-			</picture>
-			<div class="info">
-				<h3>Image editor</h3>
-				<p>
-					A simple image editor I made as part of my onboarding in Neoaddition
-					as a proof of knowlegde to use React.
-				</p>
-				<div>
-					<React className="tech" />
-					<Tailwind className="tech" />
-				</div>
-				<div class="actions">
-					<a
-						class="button live"
-						href="https://image-editor-unsplashed.vercel.app/"
-						target="_blank">
-						Live preview
-					</a>
-					<a
-						class="button github"
-						href="https://github.com/josushu0/image-editor"
-						target="_blank">
-						Github Repo
-					</a>
+		<div class="projects">
+			<div class="project">
+				<picture>
+					<source
+						srcset="/hla-dark.webp"
+						media="(prefers-color-scheme: dark)"
+					/>
+					<img src="/hla-light.webp" alt="Higher Lower Anime" />
+				</picture>
+				<div class="info">
+					<h3>Higher Lower Anime</h3>
+					<p>
+						A game of higher or lower I made for me and my friends to play, it
+						is based on The Higher Lower Game with anime rankings from Anilist.
+					</p>
+					<div>
+						<Vue className="tech" />
+						<Tailwind className="tech" />
+					</div>
+					<div class="actions">
+						<a
+							class="button live"
+							href="https://hla.josuemartell.dev/"
+							target="_blank">
+							Live preview
+						</a>
+						<a
+							class="button github"
+							href="https://github.com/josushu0/higher-lower-anime"
+							target="_blank">
+							Github Repo
+						</a>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="project">
-			<picture>
-				<source
-					srcset="/portfolio-dark.webp"
-					media="(prefers-color-scheme: dark)"
-				/>
-				<img
-					src="/portfolio-light.webp"
-					alt="A screenshot of my portfolio site"
-				/>
-			</picture>
-			<div class="info">
-				<h3>Portfolio</h3>
-				<p>My front-end developer portfolio.</p>
-				<div>
-					<Astrojs className="tech" />
-					<Vue className="tech" />
-					<CSS className="tech" />
-				</div>
-				<div class="actions">
-					<a
-						class="button github"
-						href="https://github.com/josushu0/portfolio"
-						target="_blank">
-						Github Repo
-					</a>
+			<div class="project">
+				<picture>
+					<source
+						srcset="/image-dark.webp"
+						media="(prefers-color-scheme: dark)"
+					/>
+					<img src="/image-light.webp" alt="Image editor" />
+				</picture>
+				<div class="info">
+					<h3>Image editor</h3>
+					<p>
+						A simple image editor I made as part of my onboarding in Neoaddition
+						as a proof of knowlegde to use React.
+					</p>
+					<div>
+						<React className="tech" />
+						<Tailwind className="tech" />
+					</div>
+					<div class="actions">
+						<a
+							class="button live"
+							href="https://image-editor-unsplashed.vercel.app/"
+							target="_blank">
+							Live preview
+						</a>
+						<a
+							class="button github"
+							href="https://github.com/josushu0/image-editor"
+							target="_blank">
+							Github Repo
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
